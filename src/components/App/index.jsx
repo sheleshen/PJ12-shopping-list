@@ -38,7 +38,7 @@ function App() {
     }
 
   return (
-    <div className="bg-violet-950">
+    <div className="bg-blue-dark">
       <img src="/public/images/stars-yellow.png" alt="" />
       <h1 className="my-10 mx-10 font-black text-5xl text-white">Ваш список желаний!</h1>
 

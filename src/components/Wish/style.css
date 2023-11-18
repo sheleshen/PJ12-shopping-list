@@ -1,0 +1,20 @@
+.bg-blue-light {
+    background-color: #226CC5;
+}
+
+.bg-hover {
+    background-color: #11427D;
+}
+
+.border-blue-light {
+    border: solid 1px #226CC5;
+    border-radius: 12px;
+}
+
+.bg-blue-dark {
+    background-color: #101731;
+}
+
+.text-blue-dark {
+    color: #315A8C;
+}

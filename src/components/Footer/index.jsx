@@ -1,6 +1,8 @@
+import "components/Footer/style.css"
+
 const Footer = () => {
     return (
-        <footer className="px-10 bg-violet-950 py-8 border-t border-violet-900 text-violet-400">
+        <footer className="px-10 bg-blue-dark py-8 text-blue-dark">
             <nav className="font-base text-lg">
                 <p>
                 Желанье — это множество возможностей,
