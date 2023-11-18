@@ -7,6 +7,7 @@ function App() {
   const [wishes, setWishes] = useState([
       {
         id: 1,
+        image: '../public/images/gem.png',
         title: 'Желание 1',
         description: 'Цитата для желаний'
       },

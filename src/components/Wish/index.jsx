@@ -5,6 +5,7 @@ const Wish = (props) => {
 
     return (
         <div className="bg-slate-100 text-slate-800 text-lg rounded-xl flex flex-col justify-between gap-4 px-6 py-6 drop-shadow-xl">
+            <img src="{image}" alt="" />
             <div className="flex flex-col gap-2">
               <p className="text-xl font-bold">{wish.title}</p>
               <p>{wish.description}</p>
