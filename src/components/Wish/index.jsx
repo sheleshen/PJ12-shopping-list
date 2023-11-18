@@ -1,4 +1,4 @@
-import Button from "components/Button"
+// import Button from "components/Button"
 
 const Wish = (props) => {
     const { wish, doneWish } = props
@@ -9,7 +9,8 @@ const Wish = (props) => {
               <p className="text-xl font-bold">{wish.title}</p>
               <p>{wish.description}</p>
             </div>
-            <Button onClick={() => doneWish(wish.id)} title="Выполнено!"/>
+            {/* <Button onClick={() => doneWish(wish.id)} title="Выполнено!"/> */}
+            <a onClick={() => doneWish(wish.id)}>"Выполнено!"</a>
         </div>
     )
 }
