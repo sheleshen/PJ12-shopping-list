@@ -9,26 +9,32 @@ function App() {
       {
         id: 1,
         image: '../public/images/gem.png',
-        title: 'Желание 1',
-        description: 'Цитата для желаний'
+        title: 'Увидеть Эйфелеву башню',
+        description: 'Описание желания в несколько строк'
       },
       {
         id: 2,
         image: '../public/images/gem.png',
-        title: 'Желание 2',
-        description: 'Цитата для желаний'
+        title: 'Полетать на воздушном шаре',
+        description: 'Описание желания в несколько строк'
       },
       {
         id: 3,
         image: '../public/images/gem.png',
-        title: 'Желание 3',
-        description: 'Цитата для желаний'
+        title: 'Увидеть любимую картину в оригинале',
+        description: 'Описание желания в несколько строк'
       },
       {
         id: 4,
         image: '../public/images/gem.png',
-        title: 'Желание 4',
-        description: 'Цитата для желаний'
+        title: 'Начать изучать новый иностранный язык',
+        description: 'Описание желания в несколько строк'
+      },
+      {
+        id: 5,
+        image: '../public/images/gem.png',
+        title: 'Научиться играть на музыкальном инструменте',
+        description: 'Описание желания в несколько строк'
       }
     ])
 
@@ -39,11 +45,11 @@ function App() {
     }
 
   return (
-    <div className="bg-blue-dark min-h-screen bg-image">
+    <div className="bg-blue-dark min-h-screen bg-image relative">
       <img src="/public/images/stars-yellow.png" alt="" />
-      <h1 className="my-10 mx-10 font-black text-5xl text-white">Ваш список желаний!</h1>
+      <h1 className="mx-10 py-10 font-bold text-6xl text-white">Ваш список желаний!</h1>
 
-      <div className="my-10 mx-10 grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="mx-10 pb-40 sm:pb-36 md:pb-36 grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {wishes.length === 0 && (<div className="font-bold text-4xl text-white">Время загадать желание!</div>)}
         {wishes.length > 0 && wishes.map((wish) => {
           return (

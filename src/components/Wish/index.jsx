@@ -5,11 +5,11 @@ const Wish = (props) => {
     const { wish, doneWish } = props
 
     return (
-        <div className="border-blue-light text-white text-lg flex flex-col justify-between gap-4 px-6 py-6">
-            <img src="{image}" alt="" />
+        <div className="border-blue-light text-white flex flex-col justify-between gap-4 px-6 py-6">
+            {/* <img src="{image}" alt="" /> */}
             <div className="flex flex-col gap-2">
-              <p className="text-xl font-bold">{wish.title}</p>
-              <p className="text-blue-light">{wish.description}</p>
+              <p className="text-2xl font-bold">{wish.title}</p>
+              <p className="text-base text-blue-light">{wish.description}</p>
             </div>
             {/* <Button onClick={() => doneWish(wish.id)} title="Выполнено!"/> */}
             <div className="flex justify-start">
