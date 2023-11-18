@@ -1,6 +1,7 @@
 import Footer from "components/Footer";
 import { useState } from "react";
 import Wish from "components/Wish";
+import "components/App/App.css";
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
     }
 
   return (
-    <div className="bg-blue-dark min-h-screen">
+    <div className="bg-blue-dark min-h-screen bg-image">
       <img src="/public/images/stars-yellow.png" alt="" />
       <h1 className="my-10 mx-10 font-black text-5xl text-white">Ваш список желаний!</h1>
 

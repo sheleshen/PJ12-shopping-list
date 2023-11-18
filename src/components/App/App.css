@@ -9,3 +9,10 @@
 .text-blue-dark {
     color: #315A8C;
 }
+
+.bg-image {
+    background-image: url(/public/images/mitchell-luo-wE0PFSVsyqA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
