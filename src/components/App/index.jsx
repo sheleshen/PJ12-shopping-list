@@ -10,38 +10,48 @@ function App() {
         id: 1,
         image: '../public/images/gem.png',
         title: 'Увидеть Эйфелеву башню',
-        description: 'Описание желания в несколько строк'
+        description: 'Описание желания в несколько строк',
+        addDone: false
       },
       {
         id: 2,
         image: '../public/images/gem.png',
         title: 'Полетать на воздушном шаре',
-        description: 'Описание желания в несколько строк'
+        description: 'Описание желания в несколько строк',
+        addDone: false
       },
       {
         id: 3,
         image: '../public/images/gem.png',
         title: 'Увидеть любимую картину в оригинале',
-        description: 'Описание желания в несколько строк'
+        description: 'Описание желания в несколько строк',
+        addDone: false
       },
       {
         id: 4,
         image: '../public/images/gem.png',
         title: 'Начать изучать новый иностранный язык',
-        description: 'Описание желания в несколько строк'
+        description: 'Описание желания в несколько строк',
+        addDone: false
       },
       {
         id: 5,
         image: '../public/images/gem.png',
         title: 'Научиться играть на музыкальном инструменте',
-        description: 'Описание желания в несколько строк'
+        description: 'Описание желания в несколько строк',
+        addDone: false
       }
     ])
 
-    const doneWish = (id) => {
-      console.log('Выполнить желание!')
+    const deleteWish = (id) => {
+      console.log('Удалить желание!')
       const filteredWish = wishes.filter(wish => wish.id !== id)
       setWishes(filteredWish)
+    }
+
+    const doneWish = (addDone) => {
+      console.log('Выполнить желание!')
+      
     }
 
   return (
@@ -53,7 +63,7 @@ function App() {
         {wishes.length === 0 && (<div className="font-bold text-4xl text-white">Время загадать желание!</div>)}
         {wishes.length > 0 && wishes.map((wish) => {
           return (
-            <Wish key={wish.id} wish={wish} doneWish={doneWish}/>
+            <Wish key={wish.id} wish={wish} doneWish={deleteWish}/>
           )
         })}
       </div>
