@@ -3,7 +3,7 @@ import classNames from "classnames";
 import "components/Wish/style.css";
 
 const Wish = (props) => {
-    const { wish, deleteWish } = props
+    const { wish, deleteWish, doneWish } = props
 
     return (
         <div className="border-blue-light text-white flex flex-col justify-between gap-4 px-6 py-6">
@@ -20,11 +20,19 @@ const Wish = (props) => {
               <p className="text-base text-blue-light">{wish.description}</p>
             </div>
             {/* <Button onClick={() => doneWish(wish.id)} title="Выполнено!"/> */}
-            <div className="flex justify-start">
+            <div className="flex justify-start gap-2">
                 {/* <a className={classNames("bg-blue-light rounded-xl font-bold text-white px-4 py-3 hover:bg-hover cursor-pointer", {
                     "bg-green-500": wish.addDone
                 })} onClick={() => doneWish(wish.addDone)} value={wish.addDone}>Выполнить</a> */}
-                <a className=" bg-red-400 rounded-xl font-bold text-white px-4 py-3 hover:bg-hover cursor-pointer" onClick={() => deleteWish(wish.id)}>Удалить</a>
+                <a className="bg-blue-light rounded-xl font-bold text-white px-4 py-3 hover:bg-hover cursor-pointer">
+                    Выполнить
+                </a>
+                <a className="bg-green-500 rounded-xl font-bold text-white px-4 py-3 hover:bg-hover cursor-pointer">
+                    Выполнено!
+                </a>
+                <a className=" bg-red-400 rounded-xl font-bold text-white px-4 py-3 hover:bg-hover cursor-pointer" onClick={() => deleteWish(wish.id)}>
+                    Удалить
+                </a>
             </div>  
         </div>
     )

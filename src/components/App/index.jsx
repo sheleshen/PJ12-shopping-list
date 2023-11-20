@@ -63,7 +63,7 @@ function App() {
         {wishes.length === 0 && (<div className="font-bold text-4xl text-white">Время загадать желание!</div>)}
         {wishes.length > 0 && wishes.map((wish) => {
           return (
-            <Wish key={wish.id} wish={wish} doneWish={deleteWish}/>
+            <Wish key={wish.id} wish={wish} deleteWish={deleteWish} doneWish={doneWish}/>
           )
         })}
       </div>
